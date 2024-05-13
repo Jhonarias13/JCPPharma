@@ -1,12 +1,12 @@
 import "../styles/globals.scss";
 
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/landing/Hero";
-import Brands from "@/components/landing/Brands";
-import Services from "@/components/landing/Services";
-import About from "@/components/landing/About";
-import Contact from "@/components/landing/Contact";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/navbar";
+import Hero from "@/components/landing/hero";
+import Brands from "@/components/landing/brands";
+import Services from "@/components/landing/services";
+import About from "@/components/landing/about";
+import Contact from "@/components/landing/contact";
+import Footer from "@/components/footer";
 
 
 export default function Home() {
