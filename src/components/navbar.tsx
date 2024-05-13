@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
 
   const isActive = (path: string) => {
     return pathname === path ? styles.active : "";
