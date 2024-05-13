@@ -3,11 +3,17 @@
 .footer {
   background-color: var(--secondary);
   position: relative;
+  width: 100%;
 
   .topFooter {
     display: flex;
     gap: 141px;
     padding-top: 34px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 40px;
+    }
 
     .brand {
       display: flex;
@@ -27,13 +33,16 @@
       }
 
       .brandDescription {
-        color: var(--white);
+        color: var(--colorLink);
         font-size: var(--fs-md);
         font-family: var(--interMedium);
         line-height: 125%;
         width: 100%;
         max-width: 280px;
         margin: 0;
+        @include mobile {
+          max-width: none;
+        }
       }
     }
 

@@ -5,7 +5,6 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.br}></div>
       <div className="container">
         <div className={styles.topFooter}>
           <div className={styles.brand}>
