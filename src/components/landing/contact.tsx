@@ -2,16 +2,17 @@ import style from "@/styles/landing/contact.module.scss";
 
 function Contact() {
   return (
-    <section className={style.contact}>
+    <section id="contact" className={style.contact}>
       <div className={`${style.divider} container`}>
         <div className={style.contactInfo}>
-          <h1 className={style.title}>
-            Ensuring Quality & Compliance Excellence
-          </h1>
-          <p className={style.description}>
-            Discover GMP/GLP Audit, Strategic Consulting and Investment
-            Solutions that Drive Success.
-          </p>
+          <div className={style.box}>
+            <h3 className={style.title}>
+              Ensuring Quality & Compliance Excellence
+            </h3>
+            <p className={style.description}>
+              Partner with us for top-tier GMP/GLP audits, strategic consulting, and investment <br /> insights. Let's propel your business into the future. <strong>Reach out now to start the <br /> conversation.</strong>
+            </p>
+          </div>
           <button className={style.buttonContactForm}>
             Get free consultation
           </button>

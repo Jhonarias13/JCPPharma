@@ -6,15 +6,17 @@ function Services() {
   return (
     <section className={style.services}>
       <div className="container">
-        <div className={style.contentHeader}>
+        <div className={style.containerHeader}>
           <small className={style.titleHeader}>Our Services</small>
-          <h2 className={style.title}>
-            We provide useful solution for your business
-          </h2>
-          <p className={style.description}>
-            We are committed to providing our customers with exceptional service
-            while offering our employees the best training.
-          </p>
+          <div className={style.contentHeader}>
+            <h2 className={style.title}>
+              We provide useful solution for your business
+            </h2>
+            <p className={style.description}>
+              We are committed to providing our customers with exceptional service
+              while offering our employees the best training.
+            </p>
+          </div>
         </div>
         <div className={style.contentBody}>
           <div className={style.card}>
