@@ -1,5 +1,7 @@
 import styles from "@/styles/footer.module.scss"
 import logoWhite from "../../public/icons/logo-white.svg"
+import emailIcon from "../../public/icons/email-icon.svg"
+import phoneIcon from "../../public/icons/phone-icon.svg"
 
 const Footer = () => {
   return (
@@ -40,11 +42,11 @@ const Footer = () => {
                 Business Level</h6>
               <ul className={styles.links}>
                 <li className={styles.link}>
-                  <i className="fi fi-rr-email"></i>
+                  <img src={emailIcon.src} alt="phone icon" />
                   <p> business@jcppharma.co </p>
                 </li>
                 <li className={styles.link}>
-                  <i className="fi fi-rr-phone"></i>
+                  <img src={phoneIcon.src} alt="email icon" />
                   <p> +1 (949) 555-0123 </p>
                 </li>
               </ul>
@@ -52,12 +54,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.subFooter}>
-          <div className={styles.br}></div>
           <div className={styles.boxFooter}>
             <p>Copyright 2024 by JCP Pharma. All Rights Reserved.</p>
             <div className={styles.terms}>
-              <p className={styles.term}>Terms & conditions</p>
-              <p className={styles.term}>Privacy & Policy</p>
+              <a className={styles.term}>Terms & conditions</a>
+              <a className={styles.term}>Privacy & Policy</a>
             </div>
           </div>
         </div>

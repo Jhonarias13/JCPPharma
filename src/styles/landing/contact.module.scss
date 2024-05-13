@@ -8,17 +8,19 @@
     align-items: center;
     justify-content: center;
     padding: 30px 0;
-    border-bottom: 1px solid #4f6163;
+    border-bottom: 1px solid var(--brColor);
 
     @include tablet {
       flex-direction: column;
       gap: 20px;
     }
+
     .contactInfo {
       display: flex;
       flex-direction: column;
       gap: 22px;
       align-items: flex-start;
+
       .title {
         font-size: var(--fs-3xl);
         color: var(--white);

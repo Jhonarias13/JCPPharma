@@ -1,4 +1,6 @@
-import "../styles/globals.scss";
+import "@/styles/normalize.scss"
+import "@/styles/globals.scss";
+
 
 import Navbar from "@/components/navbar";
 import Hero from "@/components/landing/hero";
