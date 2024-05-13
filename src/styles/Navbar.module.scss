@@ -43,12 +43,12 @@
   }
 
   a {
-    color: #003e44; // Ajusta según tu esquema de color
+    color: var(--secondary); // Ajusta según tu esquema de color
     font-size: 18px;
     font-family: var(--interMedium);
 
     &:hover {
-      color: #ff9b24; // Cambia al color del hover
+      color: var(--primary); // Cambia al color del hover
     }
 
     &.active {
@@ -58,7 +58,9 @@
         width: 100%;
         height: 3px;
         border-radius: 10px;
-        background-color: #ff9b24; // Color de la barra bajo el enlace activo
+        background-color: var(
+          --primary
+        ); // Color de la barra bajo el enlace activo
       }
     }
   }
@@ -73,7 +75,7 @@
   display: flex;
   gap: 14px;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--white);
   padding: 14px 30px;
 
   @include mobile {
@@ -81,27 +83,27 @@
   }
 
   .buttonContactNumber {
-    color: #ff9b24;
+    color: var(--primary);
     border-radius: 100px;
-    border: 1px solid #ff9b24;
+    border: 1px solid var(--primary);
     padding: 14px 22px;
 
     &:hover {
-      background-color: #ff9b24;
-      color: #fff;
+      background-color: var(--primary);
+      color: var(--white);
     }
   }
   .buttonContactForm {
-    color: #fff;
+    color: var(--white);
     padding: 14px 22px;
     border-radius: 100px;
-    background-color: #ff9b24;
-    border: 1px solid #ff9b24;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
 
     &:hover {
-      background-color: #fff;
-      color: #ff9b24;
-      border: 1px solid #ff9b24;
+      background-color: var(--white);
+      color: var(--primary);
+      border: 1px solid var(--primary);
     }
   }
 }

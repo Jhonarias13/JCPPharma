@@ -8,6 +8,13 @@ export default function Home() {
       <Hero />
       <main className="container">
         <section>
+          <h1>Welcome to Our Website</h1>
+          <p>
+            We are a company that specializes in providing high-quality services
+            to our clients.
+          </p>
+        </section>
+        <section>
           <h2>Our Services</h2>
           <p>
             We offer a wide range of services to meet the needs of our clients.
