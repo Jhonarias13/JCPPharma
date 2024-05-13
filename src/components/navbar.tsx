@@ -16,35 +16,36 @@ export default function Navbar() {
   };
 
   return (
-    <div className="container">
-      <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <a href="/">
-            <img className={styles.logoImg} src="/icons/logo.png" alt="logo" />
-          </a>
-        </div>
-        <div className={styles.menuIcon} onClick={() => setIsOpen(!isOpen)}>
-          <img src="/icons/burguer.svg" alt="Menu" />
-        </div>
-        <div className={`${styles.navMenu} ${isOpen ? styles.show : ""}`}>
-          <a href="/" className={`${isActive("/") ? styles.active : ""}`}>
-            Home
-          </a>
-          <a href="/">Get to know us</a>
-          <a href="/">Services</a>
-          <div className={styles.optionContactUs}>
-            <button>Contact Us</button>
-          </div>
-        </div>
+    <nav className={`${styles.navbar} container`}>
+      <div className={styles.logo}>
+        <a href="/">
+          <img className={styles.logoImg} src="/icons/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div className={styles.menuIcon} onClick={() => setIsOpen(!isOpen)}>
+        <img src="/icons/burguer.svg" alt="Menu" />
+      </div>
+      <div className={`${styles.navMenu} ${isOpen ? styles.show : ""}`}>
+        <a href="/" className={`${isActive("/") ? styles.active : ""}`}>
+          Home
+        </a>
+        <a href="/">Get to know us</a>
+        <a href="/">Services</a>
         <div className={styles.optionContactUs}>
           <a className={styles.buttonContactNumber} href="#">
             +1 (949) 555-0123
           </a>
-          <a className={styles.buttonContactForm} href="#">
-            Contact Us
-          </a>
+          <button className={styles.buttonContactForm}>Contact Us</button>
         </div>
-      </nav>
-    </div>
+      </div>
+      <div className={styles.optionContactUs}>
+        <a className={styles.buttonContactNumber} href="#">
+          +1 (949) 555-0123
+        </a>
+        <a className={styles.buttonContactForm} href="#">
+          Contact Us
+        </a>
+      </div>
+    </nav>
   );
 }
