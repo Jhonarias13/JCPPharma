@@ -4,15 +4,10 @@
   margin: 36px 0;
   width: 100%;
   height: 100%;
-  padding: 32px;
   background-image: url("/icons/imageBackServices.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  @include mobile {
-    padding: 24px;
-  }
 
   .contentHeader {
     display: flex;
@@ -34,7 +29,6 @@
       font-style: normal;
       line-height: 132%;
       max-width: 800px;
-      
 
       @include mobile {
         font-size: var(--fs-3xl);
@@ -61,8 +55,12 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
     margin-top: 32px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 24px;
+    }
     .card {
       background: #ffffff; /* White background for the normal cards */
       border-radius: 20px; /* Rounded corners */
@@ -71,6 +69,10 @@
       width: 300px; /* Fixed width */
       box-sizing: border-box; /* Include padding in width */
       transition: transform 0.3s; /* Smooth transform on hover */
+
+      @include mobile {
+        width: 100%;
+      }
 
       &:hover {
         transform: translateY(-10px); // Slight lift effect on hover

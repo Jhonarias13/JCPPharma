@@ -63,8 +63,7 @@
   .contentRight {
     .imageConsultorHero {
       max-width: 600px;
-
-      @include mobile {
+      @include tablet {
         width: 100%;
       }
     }
