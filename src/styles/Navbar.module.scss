@@ -10,7 +10,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  @include mobile {
+  @include tablet {
     position: relative;
     width: 100%;
     padding: 16px 24px 0 24px; // Ajusta según tu diseño
