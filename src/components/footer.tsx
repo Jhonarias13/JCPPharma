@@ -38,7 +38,8 @@ const Footer = () => {
 
           <div className={styles.containerBoxLinksContact}>
             <div className={styles.boxLinks}>
-              <h6 className={styles.titleLinks}>Contact</h6>
+              <h6 className={styles.titleLinks}>Let’s talk & Grow Your <br />
+                Business Level</h6>
               <ul className={styles.links}>
                 <li className={styles.link}>
                   <i className="fi fi-rr-email"></i>
