@@ -1,6 +1,5 @@
-import styles from "@/styles/Footer.module.scss"
+import styles from "@/styles/footer.module.scss"
 import logoWhite from "../../public/icons/logo-white.svg"
-import Image from "next/image";
 
 const Footer = () => {
   return (

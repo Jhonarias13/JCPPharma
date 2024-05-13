@@ -1,5 +1,5 @@
 import React from "react";
-import style from "@/styles/landing/Brands.module.scss";
+import style from "@/styles/landing/brands.module.scss";
 
 function Brands() {
   return (

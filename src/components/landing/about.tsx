@@ -1,5 +1,5 @@
 import React from "react";
-import style from "@/styles/landing/About.module.scss";
+import style from "@/styles/landing/about.module.scss";
 
 function About() {
   return (

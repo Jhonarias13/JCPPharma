@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "@/styles/landing/Services.module.scss";
+import style from "@/styles/landing/services.module.scss";
 
 function Services() {
   return (

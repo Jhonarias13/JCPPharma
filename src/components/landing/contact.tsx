@@ -1,4 +1,4 @@
-import style from "@/styles/landing/Contact.module.scss";
+import style from "@/styles/landing/contact.module.scss";
 
 function Contact() {
   return (

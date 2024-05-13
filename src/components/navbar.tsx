@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import styles from "./../styles/Navbar.module.scss";
+import styles from "./../styles/navbar.module.scss";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 export default function Navbar() {

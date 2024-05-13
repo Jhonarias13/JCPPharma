@@ -1,4 +1,4 @@
-import styles from "@/styles/landing/Hero.module.scss";
+import styles from "@/styles/landing/hero.module.scss";
 
 function Hero() {
   return (
