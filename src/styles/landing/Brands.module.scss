@@ -1,1 +1,9 @@
-@import '../mixins';
+@import "../mixins";
+
+.brands {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
