@@ -8,9 +8,9 @@
   justify-content: center;
 
   @include tablet {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    gap: 24px;
+    gap: 48px;
   }
 
   .contentRight {
@@ -91,6 +91,14 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .contentLeft {
+    img {
+      @include tablet {
+        height: 365px;
       }
     }
   }

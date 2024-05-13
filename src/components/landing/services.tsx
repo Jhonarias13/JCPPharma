@@ -4,7 +4,7 @@ import style from "@/styles/landing/services.module.scss";
 
 function Services() {
   return (
-    <section className={style.services}>
+    <section id="services" className={style.services}>
       <div className="container">
         <div className={style.containerHeader}>
           <small className={style.titleHeader}>Our Services</small>

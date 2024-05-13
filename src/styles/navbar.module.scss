@@ -12,9 +12,9 @@
 
   @include tablet {
     position: relative;
-    width: 100%;
     padding: 16px 24px 0 24px; // Ajusta según tu diseño
     z-index: 1;
+    width: auto;
     background-color: var(--white); // Cambia el color de fondo
   }
 

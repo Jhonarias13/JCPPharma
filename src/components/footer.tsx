@@ -21,9 +21,18 @@ const Footer = () => {
             <div className={styles.boxLinks}>
               <h6 className={styles.titleLinks}>Our Company</h6>
               <ul className={styles.links}>
-                <li className={styles.link}>Home</li>
-                <li className={styles.link}>Why Choose us</li>
-                <li className={styles.link}>Services</li>
+                <li className={styles.link}>
+                  <a href="#home">
+                    Home
+                  </a>
+                </li>
+                <li className={styles.link}>
+                  <a href="#about">
+                    Why Choose us
+                  </a>
+                </li>
+                <li className={styles.link}>
+                  <a href="services">Services</a></li>
               </ul>
             </div>
             <div className={styles.boxLinks}>

@@ -5,7 +5,7 @@ function About() {
   return (
     <section id="about" className="container">
       <div className={style.about}>
-        <div className="contentLeft">
+        <div className={style.contentLeft}>
           <img src="./icons/consultsAbout.png" alt="" />
         </div>
         <div className={style.contentRight}>

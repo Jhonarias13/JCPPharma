@@ -29,8 +29,8 @@ export default function Navbar() {
         <a href="/" className={`${isActive("/") ? styles.active : ""}`}>
           Home
         </a>
-        <a href="/">Get to know us</a>
-        <a href="/">Services</a>
+        <a href="#about">Get to know us</a>
+        <a href="#services">Services</a>
         <div className={styles.optionContactUs}>
           <a className={styles.buttonContactNumber} href="#">
             +1 (949) 555-0123

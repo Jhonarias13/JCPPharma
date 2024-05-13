@@ -14,6 +14,9 @@
     @include tablet {
       flex-direction: column;
       gap: 20px;
+      padding: 45px 15px;
+      align-items: center;
+      justify-content: center;
     }
 
     .contactInfo {
@@ -76,6 +79,10 @@
       img {
         height: 360px;
         object-fit: contain;
+
+        @include mobile {
+          display: none;
+        }
       }
     }
   }

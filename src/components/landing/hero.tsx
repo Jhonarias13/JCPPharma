@@ -2,7 +2,7 @@ import styles from "@/styles/landing/hero.module.scss";
 
 function Hero() {
   return (
-    <div className="container">
+    <section id="home" className="container">
       <div className={styles.divisor}>
         <div className={styles.contentLeft}>
           <h1 className={styles.title}>
@@ -24,7 +24,7 @@ function Hero() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
