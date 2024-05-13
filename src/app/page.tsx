@@ -8,18 +8,17 @@ import About from "@/components/landing/about";
 import Contact from "@/components/landing/contact";
 import Footer from "@/components/footer";
 
-
 export default function Home() {
   return (
     <>
-      <main className="container">
+      <main>
         <Navbar />
         <Hero />
         <Brands />
         <Services />
         <About />
         <Contact />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </>
   );

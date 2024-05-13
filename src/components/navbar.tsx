@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} container`}>
       <div className={styles.logo}>
         <a href="/">
           <img className={styles.logoImg} src="/icons/logo.png" alt="logo" />

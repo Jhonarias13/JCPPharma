@@ -1,1 +1,72 @@
 @import "../mixins";
+
+.divisor {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 40px;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contentLeft {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+
+    .title {
+      font-size: var(--fs-5xl);
+      color: var(--secondary);
+      font-family: var(--interBold);
+      margin: 0;
+      font-style: normal;
+      line-height: 132%;
+
+      @include mobile {
+        font-size: var(--fs-3xl);
+      }
+    }
+    .description {
+      font-size: var(--fs-md);
+      color: var(--secondary);
+      font-family: var(--interRegular);
+      font-style: normal;
+      line-height: 130%;
+      margin: 0;
+
+      @include mobile {
+        font-size: var(--fs-sm);
+        line-height: normal;
+      }
+    }
+    .buttonContactForm {
+      color: var(--white);
+      padding: 14px 22px;
+      border-radius: 100px;
+      background-color: var(--primary);
+      border: 1px solid var(--primary);
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--primary);
+        border: 1px solid var(--primary);
+      }
+    }
+  }
+
+  .contentRight {
+    .imageConsultorHero {
+      max-width: 600px;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}
