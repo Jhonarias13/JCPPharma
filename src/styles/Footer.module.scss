@@ -1,1 +1,62 @@
 @import "./mixins";
+
+.footer {
+  background-color: var(--secondary);
+  position: relative;
+
+  .topFooter {
+    display: flex;
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 16px;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 120px;
+        }
+      }
+
+      .brandDescription {
+        color: var(--white);
+        font-size: var(--fs-md);
+        font-family: var(--interMedium);
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+      }
+    }
+
+    .containerBoxLinks {
+      display: flex;
+
+      .boxLinks {
+        .titleLinks {
+          margin: 0;
+          font-size: var(--fs-sm);
+          font-family: var(--interSemiBold);
+          color: #fff;
+        }
+      }
+    }
+
+    .containerBoxLinksContact {
+    }
+  }
+
+  .br {
+    width: 100%;
+    height: 1px;
+    color: var(--brColor);
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+}
