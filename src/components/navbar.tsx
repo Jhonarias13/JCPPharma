@@ -20,7 +20,7 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <a href="/">
-            <img src="/icons/logo.png" alt="logo" />
+            <img className={styles.logoImg} src="/icons/logo.png" alt="logo" />
           </a>
         </div>
         <div className={styles.menuIcon} onClick={() => setIsOpen(!isOpen)}>

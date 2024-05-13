@@ -11,6 +11,17 @@
     position: absolute;
     width: 100%;
     top: 0;
+    z-index: 1;
+    background-color: var(--white); // Cambia el color de fondo
+  }
+
+  .logo {
+    .logoImg {
+      @include mobile {
+        width: 100px;
+        height: auto;
+      }
+    }
   }
 }
 

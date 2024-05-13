@@ -60,7 +60,7 @@ $breakpoint-xl: 1200px;
   --white: #fff;
   --black: #000;
   --gray: #dfdfdf;
-  --purpure: #8B4DFC;
+  --purpure: #8b4dfc;
 }
 
 html,
@@ -97,7 +97,7 @@ body {
 
   // Estilos para dispositivos extra grandes (xl) y mayores
   @media (min-width: $breakpoint-xl) {
-    max-width: 1140px;
+    max-width: 1380px;
   }
 }
 
