@@ -39,6 +39,7 @@
     url(../../public/fonts/Inter-ExtraBold.woff) format("woff");
   font-display: swap;
 }
+
 $breakpoint-xs: 0;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
@@ -58,6 +59,8 @@ $breakpoint-xl: 1200px;
   --secondaryLight: #008290;
   --white: #fff;
   --black: #000;
+  --gray: #dfdfdf;
+  --purpure: #8B4DFC;
 }
 
 html,
