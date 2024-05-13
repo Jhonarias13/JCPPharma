@@ -1,2 +1,106 @@
-@import "./mixins";
+@import "../mixins";
 
+.services {
+  margin: 36px 0;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  background-image: url("/icons/imageBackServices.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include mobile {
+    padding: 24px;
+  }
+
+  .contentHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+
+    .titleHeader {
+      font-size: var(--fs-md);
+      color: var(--primary);
+    }
+
+    .title {
+      font-size: var(--fs-5xl);
+      color: var(--black);
+      font-family: var(--interBold);
+      margin: 0;
+      font-style: normal;
+      line-height: 132%;
+      max-width: 800px;
+      
+
+      @include mobile {
+        font-size: var(--fs-3xl);
+      }
+    }
+    .description {
+      font-size: var(--fs-md);
+      color: var(--black);
+      font-family: var(--interRegular);
+      font-style: normal;
+      line-height: 130%;
+      margin: 0;
+      text-align: center;
+      max-width: 500px;
+
+      @include mobile {
+        font-size: var(--fs-sm);
+        line-height: normal;
+      }
+    }
+  }
+
+  .contentBody {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 32px;
+    .card {
+      background: #ffffff; /* White background for the normal cards */
+      border-radius: 20px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 20px;
+      width: 300px; /* Fixed width */
+      box-sizing: border-box; /* Include padding in width */
+      transition: transform 0.3s; /* Smooth transform on hover */
+
+      &:hover {
+        transform: translateY(-10px); // Slight lift effect on hover
+      }
+
+      h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--primary); // Orange color for the link
+        text-decoration: none; // No underline
+        font-weight: bold; // Make it bold
+      }
+
+      &.highlighted {
+        background: #004c4c; // Dark teal background for the highlighted card
+        color: var(--white); // White text for the highlighted card
+        a {
+          color: var(--white); // Orange color for the link
+          text-decoration: none; // No underline
+          font-weight: bold; // Make it bold
+        }
+      }
+    }
+  }
+}
