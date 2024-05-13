@@ -1,7 +1,7 @@
+import style from "@/styles/landing/Contact.module.scss";
+
 function Contact() {
-  return (
-    <div>Contact</div>
-  )
+  return <section className={style.contact}></section>;
 }
 
-export default Contact
+export default Contact;

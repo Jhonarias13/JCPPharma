@@ -7,13 +7,12 @@
   align-items: flex-start;
   justify-content: center;
 
-  @include mobile {
+  @include tablet {
     flex-direction: column;
+    align-items: center;
     gap: 24px;
   }
-  
-  .contentLeft {
-  }
+
   .contentRight {
     max-width: 580px;
     display: flex;

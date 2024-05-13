@@ -126,6 +126,11 @@
     display: none;
   }
 
+  @include tablet {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .buttonContactNumber {
     color: var(--primary);
     border-radius: 100px;

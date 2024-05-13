@@ -7,7 +7,7 @@
   gap: 100px;
   justify-content: space-between;
 
-  @include mobile {
+  @include tablet {
     flex-direction: column;
     gap: 24px;
   }
@@ -62,7 +62,7 @@
 
   .contentRight {
     .imageConsultorHero {
-      max-width: 600px;
+      max-width: 500px;
       @include tablet {
         width: 100%;
       }
