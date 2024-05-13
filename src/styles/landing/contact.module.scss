@@ -71,5 +71,12 @@
         }
       }
     }
+
+    .contactImage {
+      img {
+        height: 360px;
+        object-fit: contain;
+      }
+    }
   }
 }

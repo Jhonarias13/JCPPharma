@@ -20,26 +20,23 @@ function Services() {
         </div>
         <div className={style.contentBody}>
           <div className={style.card}>
-            <h1>Strategic Business Planning</h1>
+            <h1>GMP & GLP Consulting</h1>
             <p>
-              Lorem ipsum quis auctor elit sed vulputate mi sit amet mauris
-              commodo quis imperdiet massa tincidunt nunc
+              Ensure excellence and regulatory compliance with our expert services in Good Manufacturing and Laboratory Practices. We raise standards, mitigate risks.
             </p>
             <a href="#">Why choose us →</a>
           </div>
           <div className={`${style.card}`}>
-            <h1>Strategic Business Planning</h1>
+            <h1>Specialized Advisory</h1>
             <p>
-              Lorem ipsum quis auctor elit sed vulputate mi sit amet mauris
-              commodo quis imperdiet massa tincidunt nunc
+              Transform challenges into opportunities with our customized pharmaceutical advisory services. Expertise that drives innovation and profitability.
             </p>
             <a href="#">Why choose us →</a>
           </div>
           <div className={style.card}>
-            <h1>Strategic Business Planning</h1>
+            <h1>Strategic Investment</h1>
             <p>
-              Lorem ipsum quis auctor elit sed vulputate mi sit amet mauris
-              commodo quis imperdiet massa tincidunt nunc
+              Enhance your portfolio with smart investments in the pharmaceutical sector. We connect opportunities with capital, driving growth and innovation.
             </p>
             <a href="#">Why choose us →</a>
           </div>

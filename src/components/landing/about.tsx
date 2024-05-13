@@ -9,7 +9,7 @@ function About() {
           <img src="./icons/consultsAbout.png" alt="" />
         </div>
         <div className={style.contentRight}>
-          <small className={style.titleHeader}>About our company</small>
+          <small className={style.titleHeader}>About Our Company</small>
           <h2 className={style.title}>
             Powerful Solution For Your <br /> Business Growth
           </h2>
