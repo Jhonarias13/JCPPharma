@@ -10,7 +10,7 @@ function About() {
         </div>
         <div className={style.contentRight}>
           <small className={style.titleHeader}>About Our Company</small>
-          <h2 className={style.title}>
+          <h2 className={style.textPrincipal}>
             Powerful Solution For Your <br /> Business Growth
           </h2>
           <p className={style.description}>

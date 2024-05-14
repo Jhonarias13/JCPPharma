@@ -1,19 +1,31 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./../styles/navbar.module.scss";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentHash, setCurrentHash] = useState("");
 
-  const router = useRouter();
-  const pathname = usePathname();
-  // const searchParams = useSearchParams();
+  useEffect(() => {
+    const updateHash = () => {
+      const hash = window.location.hash || "#home";
+      setCurrentHash(hash);
+    };
 
-  const isActive = (path: string) => {
-    return pathname === path ? styles.active : "";
-  };
+    // Set the initial hash
+    updateHash();
+
+    // Add event listener for hash changes
+    window.addEventListener("hashchange", updateHash);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("hashchange", updateHash);
+    };
+  }, []);
+
+  const isActive = (path: string) => currentHash === path;
 
   return (
     <nav className={`${styles.navbar} container`}>
@@ -26,11 +38,21 @@ export default function Navbar() {
         <img src="/icons/burguer.svg" alt="Menu" />
       </div>
       <div className={`${styles.navMenu} ${isOpen ? styles.show : ""}`}>
-        <a href="/" className={`${isActive("/") ? styles.active : ""}`}>
+        <a href="#home" className={isActive("#home") ? styles.active : ""}>
           Home
         </a>
-        <a href="#about">Get to know us</a>
-        <a href="#services">Services</a>
+        <a
+          href="#about"
+          className={`${isActive("#about") ? styles.active : ""}`}
+        >
+          Get to know us
+        </a>
+        <a
+          href="#services"
+          className={`${isActive("#services") ? styles.active : ""}`}
+        >
+          Services
+        </a>
         <div className={styles.optionContactUs}>
           <a className={styles.buttonContactNumber} href="#">
             +1 (949) 555-0123

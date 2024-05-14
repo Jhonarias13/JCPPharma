@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent; // Hace el fondo del Navbar transparente
+  padding-bottom: 10px !important;
 
-  padding: 16px 80px 0 80px; // Ajusta según tu diseño
   margin-right: auto;
   margin-left: auto;
 
@@ -47,7 +47,7 @@
     flex-direction: column;
     background-color: var(--white);
     position: fixed;
-    top: 70px; // Ajusta según la altura de tu navbar
+    top: 80px; // Ajusta según la altura de tu navbar
     left: 0;
     width: calc(100% - 32px);
     padding: 16px;
@@ -96,6 +96,7 @@
       padding: 14px 22px;
       font-size: 16px;
       transition: all 0.3s;
+      width: auto;
 
       &:hover {
         background-color: var(--primary);

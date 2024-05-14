@@ -84,7 +84,9 @@
       transition: transform 0.3s; /* Smooth transform on hover */
       padding: 20px; /* Espaciado interno para el texto y otros contenidos */
       border: 3px solid var(--secondary);
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
 
       @include mobile {
         width: 100%;
@@ -97,20 +99,19 @@
 
       h1 {
         font-size: 26px;
-        margin-bottom: 15px;
+        margin: 0;
       }
 
       p {
         font-size: 14px;
         line-height: 1.6;
+        margin: 0;
       }
 
       a {
         color: var(--primary); // Orange color for the link
         text-decoration: none; // No underline
         font-weight: bold; // Make it bold
-        position: absolute;
-        bottom: 20px;
       }
 
       &.highlighted {
