@@ -6,11 +6,12 @@
 
   .topFooter {
     display: flex;
-    gap: 141px;
+    gap: 40px;
     padding-top: 34px;
     border-bottom: 1px solid var(--brColor);
     padding-bottom: 85px;
     padding-top: 50px;
+    justify-content: space-evenly;
 
     @include tablet {
       flex-direction: column;
@@ -35,6 +36,10 @@
 
         img {
           width: 120px;
+
+          @include tablet {
+            width: 200px;
+          }
         }
       }
 

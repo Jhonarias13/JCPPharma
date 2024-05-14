@@ -11,7 +11,8 @@
   margin-left: auto;
 
   @include tablet {
-    position: relative;
+    position: sticky;
+    top: 0;
     padding: 16px 24px 0 24px; // Ajusta según tu diseño
     z-index: 1;
     width: auto;
@@ -46,7 +47,7 @@
     flex-direction: column;
     background-color: var(--white);
     position: fixed;
-    top: 87px; // Ajusta según la altura de tu navbar
+    top: 70px; // Ajusta según la altura de tu navbar
     left: 0;
     width: calc(100% - 32px);
     padding: 16px;
@@ -58,6 +59,7 @@
     color: var(--secondary); // Ajusta según tu esquema de color
     font-size: 18px;
     font-family: var(--interMedium);
+    width: fit-content;
 
     &:hover {
       color: var(--primary); // Cambia al color del hover

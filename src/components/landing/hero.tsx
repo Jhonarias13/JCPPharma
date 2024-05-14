@@ -2,7 +2,7 @@ import styles from "@/styles/landing/hero.module.scss";
 
 function Hero() {
   return (
-    <section id="home" className="container">
+    <section id="home" className={`${styles.hero} container`}>
       <div className={styles.divisor}>
         <div className={styles.contentLeft}>
           <h1 className={styles.title}>
@@ -22,6 +22,11 @@ function Hero() {
             src="/icons/imageConsultorHero.png"
             alt="hero"
           />
+        </div>
+      </div>
+      <div className={styles.scrollDowns}>
+        <div className={styles.mousey}>
+          <div className={styles.scroller}></div>
         </div>
       </div>
     </section>

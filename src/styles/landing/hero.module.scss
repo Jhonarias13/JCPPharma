@@ -1,71 +1,122 @@
 @import "../mixins";
 
-.divisor {
-  margin: 36px 0;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  justify-content: center;
-
-  @include tablet {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .contentLeft {
-    max-width: 600px;
+.hero {
+  position: relative;
+  .divisor {
+    margin: 36px 0;
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
 
-    .title {
-      font-size: var(--fs-5xl);
-      color: var(--secondary);
-      font-family: var(--interBold);
-      margin: 0;
-      font-style: normal;
-      line-height: 132%;
-
-      @include mobile {
-        font-size: var(--fs-3xl);
-      }
+    @include tablet {
+      flex-direction: column;
+      gap: 24px;
     }
-    .description {
-      font-size: var(--fs-md);
-      color: var(--secondary);
-      font-family: var(--interRegular);
-      font-style: normal;
-      line-height: 130%;
-      margin: 0;
 
-      @include mobile {
-        font-size: var(--fs-sm);
-        line-height: normal;
+    .contentLeft {
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: flex-start;
+
+      .title {
+        font-size: var(--fs-5xl);
+        color: var(--secondary);
+        font-family: var(--interBold);
+        margin: 0;
+        font-style: normal;
+        line-height: 132%;
+
+        @include mobile {
+          font-size: var(--fs-4xl);
+        }
       }
-    }
-    .buttonContactForm {
-      color: var(--white);
-      padding: 14px 22px;
-      border-radius: 100px;
-      background-color: var(--primary);
-      border: 1px solid var(--primary);
-      transition: all 0.3s;
+      .description {
+        font-size: var(--fs-md);
+        color: var(--secondary);
+        font-family: var(--interRegular);
+        font-style: normal;
+        line-height: 130%;
+        margin: 0;
 
-      &:hover {
-        background-color: var(--white);
-        color: var(--primary);
+        @include mobile {
+          font-size: var(--fs-sm);
+          line-height: normal;
+        }
+      }
+      .buttonContactForm {
+        color: var(--white);
+        padding: 14px 22px;
+        border-radius: 100px;
+        background-color: var(--primary);
         border: 1px solid var(--primary);
+        transition: all 0.3s;
+
+        @include mobile {
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--primary);
+          border: 1px solid var(--primary);
+        }
+      }
+    }
+
+    .contentRight {
+      .imageConsultorHero {
+        max-width: 500px;
+        @include tablet {
+          width: 100%;
+        }
       }
     }
   }
+  .scrollDowns {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 55px;
 
-  .contentRight {
-    .imageConsultorHero {
-      max-width: 500px;
-      @include tablet {
-        width: 100%;
-      }
+    @include mobile {
+      top: 108%;
+    }
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: var(--primary);
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(15px);
+      opacity: 0;
     }
   }
 }

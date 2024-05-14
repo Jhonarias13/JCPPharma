@@ -72,6 +72,9 @@
           color: var(--primary);
           border: 1px solid var(--primary);
         }
+
+        @include mobile {
+        }
       }
     }
 
@@ -79,10 +82,6 @@
       img {
         height: 360px;
         object-fit: contain;
-
-        @include mobile {
-          display: none;
-        }
       }
     }
   }
