@@ -6,13 +6,16 @@
   align-items: center;
   background-color: transparent; // Hace el fondo del Navbar transparente
   padding-bottom: 10px !important;
+  padding-top: 10px !important;
 
   margin-right: auto;
   margin-left: auto;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 1;
 
   @include tablet {
-    position: sticky;
-    top: 0;
     padding: 16px 24px 0 24px; // Ajusta según tu diseño
     z-index: 1;
     width: auto;
@@ -47,7 +50,7 @@
     flex-direction: column;
     background-color: var(--white);
     position: fixed;
-    top: 80px; // Ajusta según la altura de tu navbar
+    top: 75px; // Ajusta según la altura de tu navbar
     left: 0;
     width: calc(100% - 32px);
     padding: 16px;
@@ -90,6 +93,10 @@
       align-items: stretch;
     }
     .buttonContactNumber {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
       color: var(--primary);
       border-radius: 100px;
       border: 1px solid var(--primary);
@@ -101,6 +108,10 @@
       &:hover {
         background-color: var(--primary);
         color: var(--white);
+
+        .svgIcon {
+          color: var(--white);
+        }
       }
     }
     .buttonContactForm {
@@ -135,6 +146,10 @@
   }
 
   .buttonContactNumber {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     color: var(--primary);
     border-radius: 100px;
     border: 1px solid var(--primary);
@@ -144,6 +159,10 @@
     &:hover {
       background-color: var(--primary);
       color: var(--white);
+
+      .svgIcon {
+        color: var(--white);
+      }
     }
   }
   .buttonContactForm {
